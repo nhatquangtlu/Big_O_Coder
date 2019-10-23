@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\NMLT_IO_MAX.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\NMLT_IO_MAX.dir/objects.a @CMakeFiles\NMLT_IO_MAX.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\NMLT_IO_MAX.dir/objects.a -Wl,--no-whole-archive  -o NMLT_IO_MAX.exe -Wl,--out-implib,libNMLT_IO_MAX.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NMLT_IO_MAX.dir\linklibs.rsp
