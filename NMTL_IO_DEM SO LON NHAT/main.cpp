@@ -1,6 +1,17 @@
-#include <iostream>
-
+#include<iostream>
+using namespace std;
+int chuso(int n) {
+    int temp;
+    do {
+        temp = n % 10;
+        n /= 10;
+    } while (n > 0);
+    return temp;
+}
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    int n;
+    cout << "";
+    cin >> n;
+    cout << "" << chuso(n)<<endl;
+    return 1;
 }
