@@ -1,34 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-bool KiemTra_SoTangDan(int N)
-{
-    int tMax = N % 10;
-    N = N / 10;
 
-    while (N > 0)
-    {
-        int t = N % 10;
-
-        if (t >= tMax)
-            return false;
-        else
-            tMax = t;
-
-        N = N / 10;
+int main() {
+    int n;
+    int a[1000];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
 
-    return true;
-}
+    int max_value = a[0];
+    for (int i = 1; i < n; i++) {
+        if (a[i] > max_value) {
+            max_value = a[i];
+        }
+    }
 
-int main()
-{
-    int N;
-    cout << "N = ";
-    cin >> N;
+    cout << max_value;
+    return 0;
 
-    bool kiemtra_SoTangDan = KiemTra_SoTangDan(N);
-    if (kiemtra_SoTangDan)
-        cout << "YES";
-    else
-        cout << "NO" << endl;
 }
