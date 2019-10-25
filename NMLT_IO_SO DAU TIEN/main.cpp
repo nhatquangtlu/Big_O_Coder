@@ -3,19 +3,17 @@ using namespace std;
 
 int main()
 {
-    double grade;
-    cin >> grade;
+    int r1, r2, d;
+    cin >> r1 >> r2 >> d;
 
-    if (grade >= 9)
-        cout << "A";
-    else if (grade >= 8 && grade < 9)
-        cout << "B";
-    else if (grade >= 7 && grade < 8)
-        cout << "C";
-    else if (grade >= 6 && grade < 7)
-        cout << "D";
-    else if (grade >= 5 && grade < 6)
-        cout << "E";
+    if (d == abs(r1 - r2))
+        cout << 1;
+    else if (d == r1 + r2)
+        cout << 2;
+    else if (abs(r1 - r2) < d && d < r1 + r2)
+        cout << 3;
+    else if (d < abs(r1 - r2))
+        cout << 4;
     else
-        cout << "failed";
+        cout << 5;
 }
