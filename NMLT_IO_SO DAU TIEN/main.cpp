@@ -1,22 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
-    int a[1000];
-    cin >> n;
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
-    }
+int main()
+{
+    double grade;
+    cin >> grade;
 
-    int max_value = a[0];
-    for (int i = 1; i < n; i++) {
-        if (a[i] > max_value) {
-            max_value = a[i];
-        }
-    }
-
-    cout << max_value;
-    return 0;
-
+    if (grade >= 9)
+        cout << "A";
+    else if (grade >= 8 && grade < 9)
+        cout << "B";
+    else if (grade >= 7 && grade < 8)
+        cout << "C";
+    else if (grade >= 6 && grade < 7)
+        cout << "D";
+    else if (grade >= 5 && grade < 6)
+        cout << "E";
+    else
+        cout << "failed";
 }
