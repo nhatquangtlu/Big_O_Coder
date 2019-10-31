@@ -1,5 +1,4 @@
 #include <iostream>
-#include<cmath>
 using namespace std;
 int main()
 {
@@ -7,6 +6,7 @@ int main()
     cin>>L>>R;
     for(int i=1; i<=R;i++)
         if(i%3==0 || i%5==0)
-            dem++;
+            continue;
+             dem++;
     cout<<""<<dem;
 }
